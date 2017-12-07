@@ -1,4 +1,4 @@
-var result;
+var result = "";
 $('#btn-convert').on('click', function(){
     //outputs
     var destino = $('#destino');
