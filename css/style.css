@@ -94,7 +94,11 @@
         :: CUSTOM
     -------------------------------------------------- */
     .navbar-brand{
-        color: #2196f3;
+        color: #2196f3 !important;
         font-family: 'Oswald', sans-serif;
         font-size: 30;
+    }
+
+    li.active{
+        background-color: #fff !important;
     }
