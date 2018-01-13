@@ -2,7 +2,7 @@
 	:: Login Section
 	-------------------------------------------------- */
     #login {
-        padding-top: 50px
+        /* padding-top: 50px*/
     }
     #login .form-wrap {
         width: 30%;
@@ -104,3 +104,19 @@
     #footer a {
         color: inherit;
     }
+<<<<<<< HEAD
+=======
+
+    /*    --------------------------------------------------
+        :: CUSTOM
+    -------------------------------------------------- */
+    .navbar-brand{
+        color: #2196f3 !important;
+        font-family: 'Oswald', sans-serif;
+        font-size: 30;
+    }
+
+    li.active{
+        background-color: #fff !important;
+    }
+>>>>>>> 476357b744c413b99c9ea59bb7606514f6ebbfd5

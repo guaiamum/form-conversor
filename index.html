@@ -1,44 +1,64 @@
 <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body>
 
-  <div class="w3-sidebar w3-bar-block w3-light-grey w3-card" style="width:130px">
-    <h5 class="w3-bar-item">Menu</h5>
-    <button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'London')">To MD Jyra</button>
-  </div>
+<!-- <nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+        <a class="navbar-brand" href="#">Form Conversor</a>
+        </div>
+        <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Issue Bitbucket MarkDown</a></li>
+        </ul>
+    </div>
+</nav> -->
+<div class="w3-sidebar w3-bar-block w3-light-grey w3-card" style="width:130px">
+  <!-- <h5 class="w3-bar-item">Menu</h5> -->
+  <a class="navbar-brand" href="#">Form Conversor</a>
+  <button class="w3-bar-item w3-button tablink">To MD Jyra</button>
+</div>
 
+<div id="alerta-versao" class="alert alert-info fade in">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        <strong>New version!</strong> To switch to old version, click <a id="old-school" style="cursor: hand;">here</a>.
+</div>
 
 <section id="login">
     <div class="container">
     	<div class="row">
-                <h1>Preencha os campos</h1>
-                <div class="col-xs-4 col-xs-offset-1">
 
-                        <div class="form-group">
-                            <input type="text" name="plataforma" id="plataforma" class="form-control" placeholder="Plataforma">
-                        </div>
+            <div class="col-xs-4 col-xs-offset-1">
 
-                        <div class="form-group">
-                                <input type="text" name="caminho" id="caminho" class="form-control" placeholder="Caminho">
-                        </div>
+                    <div class="form-group">
+                        <input type="text" name="plataforma" id="plataforma" class="form-control" placeholder="Plataforma">
+                    </div>
 
-                        <div class="form-group">
-                            <textarea type="text" name="descricao" id="descricao" class="form-control" placeholder="Descrição" rows="4"></textarea>
-                        </div>
+                    <div class="form-group">
+                            <input type="text" name="caminho" id="caminho" class="form-control" placeholder="Caminho">
+                    </div>
 
-                        <a type="button" id="btn-convert" class="btn btn-custom btn-lg btn-block"><strong><i class="fa fa-exchange" aria-hidden="true"></i> Converter </a></strong></a>
-            </div> <!-- /.col-xs-8 -->
+                    <div class="form-group">
+                            <textarea type="text" name="descricao" id="descricao" class="form-control" placeholder="Descrição" rows="2"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <textarea type="text" name="esperado" id="esperado" class="form-control" placeholder="Comportamento esperado" rows="2"></textarea>
+                    </div>
+
+                    <a type="button" id="btn-convert" class="btn btn-custom btn-lg btn-block"><strong><i class="fa fa-exchange" aria-hidden="true"></i> Converter </a></strong></a>
+
+            </div>
+
             <div class="col-xs-6">
-
                     <div class="form-group">
                         <textarea class="form-control" rows="13" id="destino"></textarea>
                     </div>
+            </div>
 
-            </div> <!-- /.col-xs-4 -->
     	</div> <!-- /.row -->
     </div> <!-- /.container -->
 </section>
@@ -49,3 +69,4 @@
 <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="js/convert.js"></script>
+<script src="js/version.js"></script>
