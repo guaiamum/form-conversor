@@ -59,7 +59,22 @@
         text-align: center;
         display: block;
     }
-    
+    form input:focus + label, form textarea:focus + label {
+    	background: #357EBD;
+    	color: white;
+    	font-size: 70%;
+    	padding: 1px 6px;
+    	z-index: 2;
+    	text-transform: uppercase;
+    }
+    form label {
+    	-webkit-transition: background 0.2s, color 0.2s, top 0.2s, bottom 0.2s, right 0.2s, left 0.2s;
+    	transition: background 0.2s, color 0.2s, top 0.2s, bottom 0.2s, right 0.2s, left 0.2s;
+    	position: absolute;
+    	color: #999;
+    	padding: 7px 6px;
+    	font-weight: normal;
+    }
     /*    --------------------------------------------------
         :: Inputs & Buttons
         -------------------------------------------------- */
@@ -68,13 +83,13 @@
     }
     .btn-custom {
         color: #fff;
-        background-color: #2196f3;
+        background-color: #2196f3!;
     }
     .btn-custom:hover,
     .btn-custom:focus {
         color: #fff;
     }
-    
+
     /*    --------------------------------------------------
         :: Footer
         -------------------------------------------------- */
